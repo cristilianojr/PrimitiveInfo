@@ -15,4 +15,3 @@ Este modulo tem como objetivo verificar uma string e retornar uma informação s
     - @isCapitalize
     - @isASCII
     - @isSpace    
-*/
