@@ -1,15 +1,16 @@
 /*
-Name: Primitive
+Name: PrimitiveInfo
 Author: Cristiliano Júnior
 Linkedin: cristilianojr
 
-Description: This module has many functions to identify, through strings, their primitive types.
+Description: This module has many functions to identify, through strings, their primitive types (string informations).
 
 functions:
     @isInteger
     @isFloat
     @isBinary
     @isAlphabetic
+    @isAlphabeticPhase
     @isAlphaNumeric
     @isUpper
     @isLower
