@@ -110,6 +110,25 @@ function isAlphabetic (value) {
     return true
 }
 
+function isAlphabeticPhase (value) {
+    /*
+    This function receives a string and checks if its char pattern belongs to the alphabet and are separeted by white spaces.
+
+    #value : string
+    */
+    for (char in value) {
+        var charCode = value.charCodeAt(char)
+
+        if (!(charCode >= 65 && charCode <= 90) && 
+            !(charCode >= 97 && charCode <= 122) &&
+            !(charCode == 32)) {
+            return false
+        }
+    }
+    
+    return true
+}
+
 function isAlphaNumeric (value) {
     /*
     This function receives a string and checks if its char pattern belongs to the alphabet (a-z A-Z) and 0-9.
@@ -149,8 +168,7 @@ function isUpper (value) {
     for (char in value) {
         var charCode = value.charCodeAt(char)
 
-        if ((charCode >= 97 && charCode <= 122)) {
-
+        if (!(charCode >= 65 && charCode <= 90)) {
             return false
         }
     }
@@ -167,8 +185,7 @@ function isLower (value) {
     for (char in value) {
         var charCode = value.charCodeAt(char)
 
-        if ((charCode >= 65 && charCode <= 90)) {
-
+        if (!(charCode >= 97 && charCode <= 122)) {
             return false
         }
     }
